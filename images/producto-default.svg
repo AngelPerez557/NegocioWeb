@@ -1,0 +1,28 @@
+<!-- Imagen por defecto para productos sin imagen -->
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo con gradiente -->
+  <rect width="200" height="200" fill="url(#bg)" rx="8"/>
+  
+  <!-- Ícono de caja/producto -->
+  <g transform="translate(50, 40)">
+    <!-- Caja principal -->
+    <path d="M10 40 L90 40 L90 120 L10 120 Z" fill="#6c757d" opacity="0.3"/>
+    <!-- Tapa de la caja -->
+    <path d="M10 40 L50 20 L90 40 L50 60 Z" fill="#6c757d" opacity="0.5"/>
+    <!-- Líneas de la caja -->
+    <path d="M10 40 L50 60 L50 140 L10 120" fill="#6c757d" opacity="0.4"/>
+    <path d="M90 40 L50 60 L50 140 L90 120" fill="#6c757d" opacity="0.2"/>
+  </g>
+  
+  <!-- Texto -->
+  <text x="100" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">
+    Sin imagen
+  </text>
+</svg>

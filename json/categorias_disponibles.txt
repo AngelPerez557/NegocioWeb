@@ -1,0 +1,18 @@
+categorias:
+
+Computadoras
+Teclados
+Monitores
+Mouse
+Router
+Almacenamiento
+Impresoras
+Telefonos
+Audifonos
+Camara
+Proyector
+Componentes Internos
+Altavoces
+Relojes Inteligentes
+Consolas
+Accesorios

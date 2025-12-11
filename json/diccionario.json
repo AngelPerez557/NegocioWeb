@@ -1,0 +1,562 @@
+{
+"productos":  [
+                {
+                    "codigo":  "P001",
+                    "nombre":  "Parlante Deadpool",
+                    "descripcion":  "Parlante temático de Deadpool con excelente calidad de sonido",
+                    "precio":  450,
+                    "categoria":  "Accesorios",
+                    "masvendidos":  "true",
+                    "estado":  "inactivo"
+                },
+                {
+                    "codigo":  "P002",
+                    "nombre":  "Teclado con MousePad Inalambrico",
+                    "descripcion":  "Teclado con mousepad integrado, cómodo y práctico",
+                    "precio":  300,
+                    "categoria":  "Teclados",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P003",
+                    "nombre":  "Enchufes Alexa",
+                    "descripcion":  "Enchufe inteligente compatible con Alexa y Google Home",
+                    "precio":  90,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P004",
+                    "nombre":  "Foco Alexa",
+                    "descripcion":  "Foco inteligente controlable por voz con Alexa",
+                    "precio":  90,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P005",
+                    "nombre":  "Cortauñas Lagne",
+                    "descripcion":  "Cortauñas de alta calidad marca Lagne",
+                    "precio":  190,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P006",
+                    "nombre":  "Soporte Para Luz",
+                    "descripcion":  "Soporte ajustable para luces LED o lámparas",
+                    "precio":  300,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P007",
+                    "nombre":  "Mochila",
+                    "descripcion":  "Mochila resistente y espaciosa para uso diario",
+                    "precio":  900,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P008",
+                    "nombre":  "Monopoly",
+                    "descripcion":  "Juego de mesa Monopoly clásico",
+                    "precio":  600,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P009",
+                    "nombre":  "Ventilador Portatil",
+                    "descripcion":  "Ventilador portátil compacto y silencioso",
+                    "precio":  800,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P010",
+                    "nombre":  "Extensor Corroente",
+                    "descripcion":  "Extensor de corriente múltiple con protección",
+                    "precio":  110,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P011",
+                    "nombre":  "Microfono Inalambrico",
+                    "descripcion":  "Micrófono inalámbrico de alta calidad para presentaciones",
+                    "precio":  600,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P012",
+                    "nombre":  "Desodorante Para Pies",
+                    "descripcion":  "Desodorante especializado para pies",
+                    "precio":  110,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P013",
+                    "nombre":  "Linterna Tactica",
+                    "descripcion":  "Linterna táctica LED de alto rendimiento",
+                    "precio":  950,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P014",
+                    "nombre":  "Teclado Flexible",
+                    "descripcion":  "Teclado flexible y enrollable resistente al agua",
+                    "precio":  900,
+                    "categoria":  "Teclados",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P015",
+                    "nombre":  "Funko Poop",
+                    "descripcion":  "Figura coleccionable Funko Pop",
+                    "precio":  400,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P016",
+                    "nombre":  "Soporter Telefono Carro",
+                    "descripcion":  "Soporte de teléfono para automóvil",
+                    "precio":  870,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P017",
+                    "nombre":  "Destapador Magnetico",
+                    "descripcion":  "Destapador magnético de fácil uso",
+                    "precio":  280,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P018",
+                    "nombre":  "Lampara Escritorio",
+                    "descripcion":  "Lámpara de escritorio con luz ajustable",
+                    "precio":  700,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P019",
+                    "nombre":  "Soporte de Madera Para Telefono",
+                    "descripcion":  "Soporte de madera elegante para teléfono",
+                    "precio":  500,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P020",
+                    "nombre":  "Set Cortauñas",
+                    "descripcion":  "Set completo de cortauñas de calidad",
+                    "precio":  190,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P021",
+                    "nombre":  "Power Magnetica",
+                    "descripcion":  "Batería magnética portátil de alta capacidad",
+                    "precio":  1120,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P022",
+                    "nombre":  "Jenga",
+                    "descripcion":  "Juego de mesa Jenga clásico",
+                    "precio":  410,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P023",
+                    "nombre":  "Candado Con Huella",
+                    "descripcion":  "Candado inteligente con sensor de huella dactilar",
+                    "precio":  700,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P024",
+                    "nombre":  "Brasalete Para Telefono",
+                    "descripcion":  "Brazalete deportivo para llevar teléfono",
+                    "precio":  410,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P025",
+                    "nombre":  "Adaptador de pared",
+                    "descripcion":  "Adaptador de corriente múltiple para pared",
+                    "precio":  480,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P026",
+                    "nombre":  "Fire Tv",
+                    "descripcion":  "Amazon Fire TV para streaming de contenido",
+                    "precio":  640,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P027",
+                    "nombre":  "Pantalla",
+                    "descripcion":  "Pantalla de alta resolución",
+                    "precio":  1700,
+                    "categoria":  "Monitores",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P028",
+                    "nombre":  "Esterelisador Cepillos",
+                    "descripcion":  "Esterilizador UV para cepillos de dientes",
+                    "precio":  690,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P029",
+                    "nombre":  "Luces Led 100 Pies",
+                    "descripcion":  "Tira de luces LED de 100 pies",
+                    "precio":  280,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P030",
+                    "nombre":  "Disco Duro 1TB Data Poket",
+                    "descripcion":  "Disco duro externo 1TB Data Pocket",
+                    "precio":  1700,
+                    "categoria":  "Almacenamiento",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P031",
+                    "nombre":  "Disco Duro 500GB Data Poket",
+                    "descripcion":  "Disco duro externo 500GB Data Pocket",
+                    "precio":  980,
+                    "categoria":  "Almacenamiento",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P032",
+                    "nombre":  "Mouse Tipo C",
+                    "descripcion":  "Mouse inalámbrico con puerto USB tipo C",
+                    "precio":  110,
+                    "categoria":  "Mouse",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P033",
+                    "nombre":  "Lampara Medusa",
+                    "descripcion":  "Lámpara decorativa con forma de medusa",
+                    "precio":  800,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P034",
+                    "nombre":  "Torrre De poder",
+                    "descripcion":  "Torre múltiple de poder con protección",
+                    "precio":  530,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P035",
+                    "nombre":  "Relo Fossil",
+                    "descripcion":  "Reloj de pulsera marca Fossil, Preguntar Al Whatsapp para mas estilos",
+                    "precio":  2200,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P036",
+                    "nombre":  "Boxer Tommy",
+                    "descripcion":  "Boxer Tommy Hilfiger",
+                    "precio":  500,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P037",
+                    "nombre":  "Peine Hombre",
+                    "descripcion":  "Peine de calidad para hombre",
+                    "precio":  110,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P038",
+                    "nombre":  "Piña C",
+                    "descripcion":  "Adaptador de carga Tipo C",
+                    "precio":  780,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P039",
+                    "nombre":  "Cable C a Lightining",
+                    "descripcion":  "Cable USB Tipo C a Lightning",
+                    "precio":  630,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P040",
+                    "nombre":  "Cable C a C",
+                    "descripcion":  "Cable USB Tipo C a Tipo C",
+                    "precio":  630,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P041",
+                    "nombre":  "Air Tag",
+                    "descripcion":  "Rastreador Apple AirTag",
+                    "precio":  700,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P042",
+                    "nombre":  "Fundas Air Tag",
+                    "descripcion":  "Fundas protectoras para AirTag",
+                    "precio":  90,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P043",
+                    "nombre":  "JBL Clip 4",
+                    "descripcion":  "Parlante portátil JBL Clip 4",
+                    "precio":  1350,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P044",
+                    "nombre":  "JBL Go 3",
+                    "descripcion":  "Parlante portátil JBL Go 3",
+                    "precio":  950,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P045",
+                    "nombre":  "Adaptador USB",
+                    "descripcion":  "Adaptador USB múltiple",
+                    "precio":  110,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P046",
+                    "nombre":  "Adaptadores 8en1",
+                    "descripcion":  "Hub adaptador USB 8 en 1",
+                    "precio":  300,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P047",
+                    "nombre":  "Calcetines",
+                    "descripcion":  "Pack de calcetines de calidad",
+                    "precio":  300,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P048",
+                    "nombre":  "Boxer Fruit",
+                    "descripcion":  "Boxer Fruit of the Loom",
+                    "precio":  700,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P049",
+                    "nombre":  "Boxer Puma",
+                    "descripcion":  "Boxer Puma",
+                    "precio":  400,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P050",
+                    "nombre":  "Gorras",
+                    "descripcion":  "Gorra de moda",
+                    "precio":  400,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P051",
+                    "nombre":  "Cartera",
+                    "descripcion":  "Cartera de cuero",
+                    "precio":  340,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P052",
+                    "nombre":  "Faja Kenneth cole",
+                    "descripcion":  "Faja Kenneth Cole",
+                    "precio":  400,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P053",
+                    "nombre":  "Faja Levis/Timberland",
+                    "descripcion":  "Faja Levis/Timberland",
+                    "precio":  690,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P054",
+                    "nombre":  "Set de cortauñas Nautica Cuero",
+                    "descripcion":  "Set de cortauñas Náutica con estuche de cuero",
+                    "precio":  350,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P055",
+                    "nombre":  "Set de cortauñas Nautica Metal",
+                    "descripcion":  "Set de cortauñas Náutica con estuche de metal",
+                    "precio":  200,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P056",
+                    "nombre":  "Maquina de Afeitar Nariz",
+                    "descripcion":  "Máquina de afeitar para nariz",
+                    "precio":  200,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P057",
+                    "nombre":  "Maquina de Afeitar completo",
+                    "descripcion":  "Máquina de afeitar de cuerpo completo",
+                    "precio":  490,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P058",
+                    "nombre":  "TV Stick HD",
+                    "descripcion":  "TV Stick HD para streaming",
+                    "precio":  503.72,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P059",
+                    "nombre":  "Linterna Tactica Recargable",
+                    "descripcion":  "Linterna táctica LED recargable",
+                    "precio":  758.52,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P060",
+                    "nombre":  "Organizador de Madera para Telefono",
+                    "descripcion":  "Organizador de madera para teléfono",
+                    "precio":  492.52,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                },
+                {
+                    "codigo":  "P061",
+                    "nombre":  "JBL Audifonos inalambicos",
+                    "descripcion":  "Audífonos inalámbricos JBL",
+                    "precio":  838.60,
+                    "categoria":  "Accesorios",
+                    "masvendidos":  "default",
+                    "estado":  "activo"
+                },
+                {
+                    "codigo":  "P062",
+                    "nombre":  "Astronauta Lampara",
+                    "descripcion":  "Lámpara con diseño de astronauta",
+                    "precio":  800,
+                    "categoria":  "Accesorios",
+                    "estado":  "activo",
+                    "masvendidos":  "true"
+                }
+            ]
+}

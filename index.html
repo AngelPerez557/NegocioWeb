@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ========================================
+       Zona Marcol - PÁGINA PRINCIPAL
+       ========================================
+       Archivo: index.html
+       Descripción: Página principal de la tienda en línea JAD
+       Tecnologías: HTML5, Bootstrap 3, FontAwesome, jQuery
+       
+       📋 ESTRUCTURA DE LA PÁGINA:
+       1. Head - Configuración y enlaces
+       2. Navbar - Barra de navegación superior
+       3. Carrusel Principal - Imágenes de portada
+       4. Sección de Productos - Catálogo principal
+       5. Carrusel de Marcas - Logos de marcas
+       6. Footer - Pie de página con información
+       7. Modales - Ventanas emergentes (carrito, detalles)
+       8. Notificaciones Toast - Mensajes temporales
+       ======================================== -->
+
+  <!-- ========================================
+       HEAD - CONFIGURACIÓN DE LA PÁGINA
+       ========================================
+       Metadatos, enlaces a CSS y JS, título
+       ======================================== -->
+  <head>
+    <!-- Configuración de caracteres y viewport para responsive -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- 📦 ENLACES A HOJAS DE ESTILO -->
+    <!-- Bootstrap 3.4.1 - Framework CSS para diseño responsive -->
+    <link
+      rel="stylesheet"
+      href="CSS/bootstrap-3.4.1-dist/css/bootstrap.min.css"
+    />
+    <!-- FontAwesome - Librería de iconos -->
+    <link rel="stylesheet" href="CSS/fontawesome/css/all.min.css" />
+    <!-- Estilos personalizados de la tienda -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Zona Marcol</title>
+  </head>
+
+  <!-- ========================================
+       BODY - CONTENIDO PRINCIPAL
+       ========================================
+       Contenedor principal que incluye todas
+       las secciones visibles de la página
+       ======================================== -->
+  <body>
+    <!-- ========================================
+         BARRA DE NAVEGACIÓN (NAVBAR)
+         ========================================
+         Barra fija superior con menú de navegación,
+         logo de la tienda y contador del carrito
+         ======================================== -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- INICIO - Cabecera de la navbar (logo y botón móvil) -->
+        <div class="navbar-header">
+          <!-- Botón hamburguesa para dispositivos móviles -->
+          <!-- Permite mostrar/ocultar el menú en pantallas pequeñas -->
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span> <!-- Línea 1 del botón hamburguesa -->
+            <span class="icon-bar"></span> <!-- Línea 2 del botón hamburguesa -->
+            <span class="icon-bar"></span> <!-- Línea 3 del botón hamburguesa -->
+          </button>
+          <!-- Logo y nombre de la tienda con icono de laptop -->
+          <a class="navbar-brand" href="#"
+            ><i class="fas fa-laptop"></i> Zona Marcol</a
+          >
+        </div>
+        <!-- FIN - Cabecera de la navbar -->
+
+        <!-- INICIO - Contenido colapsable de la navbar -->
+        <!-- Se oculta en dispositivos móviles y se muestra al presionar el botón hamburguesa -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- INICIO - Enlaces de navegación (lado izquierdo) -->
+          <ul class="nav navbar-nav">
+            <!-- Enlace de inicio (página actual) - marcado como activo -->
+            <li class="active" id="nav-inicio">
+              <a href="#" id="btn-inicio">INICIO <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- Enlace a la sección de productos -->
+            <li id="nav-productos"><a href="#" id="btn-productos">PRODUCTOS</a></li>
+          </ul>
+          <!-- FIN - Enlaces de navegación (lado izquierdo) -->
+
+          <!-- INICIO - Enlaces de navegación (lado derecho) -->
+          <!-- Sección del carrito de compras con contador dinámico -->
+
+          
+          <ul class="nav navbar-nav navbar-right">
+            <!-- Enlace al carrito de compras con badge de cantidad -->
+            
+          </ul>
+          <!-- FIN - Enlaces de navegación (lado derecho) -->
+        </div>
+        <!-- FIN - Contenido colapsable de la navbar -->
+      </div>
+      <!-- FIN - Contenedor fluido de la navbar -->
+    </nav>
+    <!-- ========================================
+         FIN DE LA BARRA DE NAVEGACIÓN
+         ======================================== -->
+
+    <!-- ========================================
+         CARRUSEL DE PORTADA - PRODUCTOS DESTACADOS
+         ========================================
+         Carrusel principal con banners promocionales
+         que se desplazan automáticamente
+         ======================================== -->
+    <div id="pixelplay-carousel" class="carousel slide" data-ride="carousel">
+        <!-- INICIO - Indicadores del carrusel -->
+        <!-- Puntos en la parte inferior para navegación manual -->
+        <ol class="carousel-indicators">
+            <li data-target="#pixelplay-carousel" data-slide-to="0" class="active"></li> <!-- Slide 1 - HP -->
+            <li data-target="#pixelplay-carousel" data-slide-to="1"></li> <!-- Slide 2 - XBOX -->
+            <li data-target="#pixelplay-carousel" data-slide-to="2"></li> <!-- Slide 3 - LOGITECH -->
+            <li data-target="#pixelplay-carousel" data-slide-to="3"></li> <!-- Slide 4 - APPLE -->
+            <li data-target="#pixelplay-carousel" data-slide-to="4"></li> <!-- Slide 5 - JBL -->
+            <li data-target="#pixelplay-carousel" data-slide-to="5"></li> <!-- Slide 6 - LENOVO -->
+        </ol>
+        <!-- FIN - Indicadores del carrusel -->
+
+        <!-- INICIO - Contenedor de slides -->
+        <div class="carousel-inner">
+            <!-- SLIDE 1: Banner HP (activo por defecto) -->
+            <div class="item active">
+                <img src="imagenesCarrucel\bannerHP.png" alt="Banner promocional HP" style="width:100%;">
+                <div class="carousel-caption">
+                    <!-- Aquí se pueden agregar títulos y descripciones sobre la imagen -->
+                </div>
+            </div>
+             
+            <!-- SLIDE 2: Banner XBOX -->
+            <div class="item">
+                <img src="imagenesCarrucel\bannerXBOX.png" alt="Banner promocional XBOX" style="width:100%;">
+                <div class="carousel-caption">
+                    <!-- Aquí se pueden agregar títulos y descripciones sobre la imagen -->
+                </div>
+            </div>
+
+            <!-- SLIDE 3: Banner LOGITECH -->
+            <div class="item">
+                <img src="imagenesCarrucel\bannerLOGITECH.png" alt="Banner promocional LOGITECH" style="width:100%;">
+                <div class="carousel-caption">
+                    <!-- Aquí se pueden agregar títulos y descripciones sobre la imagen -->
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="imagenesCarrucel\bannerAPPLE.png" alt="Imagen 4" style="width:100%;">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="imagenesCarrucel\bannerLENOVO.png" alt="Imagen 5" style="width:100%;">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <a class="left carousel-control" href="#pixelplay-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#pixelplay-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+
+    <!-- ========================================
+         SECCIÓN DE PRODUCTOS
+         ======================================== -->
+    
+    <!--Seccion 1, muestra de productos-->
+  <section>
+    <div class="container productos-seccion">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Título de la sección -->
+          <h2 class="text-center">Nuestros Productos</h2>
+          
+          <!-- BUSCADOR -->
+          <div class="row" style="margin-bottom: 30px; margin-top: 20px;">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="input-group" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 25px; overflow: hidden;">
+                <input 
+                  type="text" 
+                  id="buscador-productos" 
+                  class="form-control" 
+                  placeholder=" Buscar por nombre o precio..." 
+                  style="border: none; padding: 12px 20px; font-size: 14px;"
+                >
+                <span class="input-group-btn">
+                  <button class="btn btn-primary" type="button" style="border: none; border-radius: 0; padding: 12px 20px;">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </span>
+              </div>
+              <p class="text-center text-muted" style="margin-top: 8px; font-size: 12px;">Escribe el nombre del producto o un rango de precio (ej: 100-500)</p>
+            </div>
+          </div>
+          <!-- FIN BUSCADOR -->
+          
+          <!-- Contenedor donde se cargarán los productos dinámicamente -->
+          <div id="productos-container" class="row">
+            <!-- Los productos se cargarán aquí dinámicamente -->
+            
+            <!-- INICIO - Card de ejemplo -->
+            
+            <!-- FIN - Card de ejemplo -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+    <!-- Fin de Seccion 1-->
+
+    <!-- FIN - Sección de productos -->
+
+
+    <!-- ========================================
+         SECCIÓN DE PRODUCTOS (RESERVADA PARA FUTUROS PRODUCTOS)
+         ======================================== -->
+    <!-- INICIO DE PRODUCTOS -->
+     <section>
+
+     </section>
+    <!-- FIN DE PRODUCTOS -->
+
+    <!-- ========================================
+         CARRUSEL AUTOMÁTICO DE MARCAS
+         ======================================== -->
+    <section class="marcas-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-center marcas-titulo">Marcas Disponibles</h3>
+            <div class="marcas-carrusel-container">
+              <div class="marcas-carrusel">
+                <!-- Primera ronda de imágenes -->
+                <div class="marca-slide">
+                  <img src="iconos/APPLE.png" alt="Apple">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/DELL.png" alt="Dell">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/DYSON.png" alt="Dyson">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/FRIGIDAIRE.png" alt="Frigidaire">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/HONOR.png" alt="Honor">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/HP.png" alt="HP">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/JBL.png" alt="JBL">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/LG.png" alt="LG">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/MABE.png" alt="Mabe">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/MOTOROLA.png" alt="Motorola">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/SANSUNG.png" alt="Samsung">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/SONY.png" alt="Sony">
+                </div>
+                <!-- Segunda ronda de imágenes para efecto continuo -->
+                <div class="marca-slide">
+                  <img src="iconos/APPLE.png" alt="Apple">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/DELL.png" alt="Dell">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/DYSON.png" alt="Dyson">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/FRIGIDAIRE.png" alt="Frigidaire">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/HONOR.png" alt="Honor">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/HP.png" alt="HP">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/JBL.png" alt="JBL">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/LG.png" alt="LG">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/MABE.png" alt="Mabe">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/MOTOROLA.png" alt="Motorola">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/SANSUNG.png" alt="Samsung">
+                </div>
+                <div class="marca-slide">
+                  <img src="iconos/SONY.png" alt="Sony">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     
+    <!-- ========================================
+         FOOTER - PIE DE PÁGINA
+         ======================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- INICIO - Información de la empresa -->
+          <div class="col-md-4">
+            <h5><i class="fas fa-laptop"></i> Zona Marcol</h5>
+            <p>
+              Tu tienda de tecnología de confianza. Ofrecemos los mejores
+              productos tecnológicos con la mejor calidad y precios
+              competitivos.
+            </p>
+            <!-- Enlaces a redes sociales -->
+            <div class="redes-sociales">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <!-- FIN - Información de la empresa -->
+
+          <!-- INICIO - Enlaces útiles -->
+          <div class="col-md-4">
+            <h5>Enlaces Útiles</h5>
+            <ul class="footer-links">
+              <li><a href="#" data-toggle="modal" data-target="#modalSobreNosotros">Sobre Nosotros</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#modalSoporteTecnico">Soporte Técnico</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#modalGarantias">Garantías</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#modalPoliticaPrivacidad">Política de Privacidad</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#modalTerminosCondiciones">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+          <!-- FIN - Enlaces útiles -->
+
+          <!-- INICIO - Información de contacto -->
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <div class="contacto-info">
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Barrio el centro Santa
+                Barbara (Honduras)
+              </p>
+              <p><i class="fas fa-phone"></i> (+504) 9714-1775</p>
+              <p><i class="fas fa-envelope"></i> zonamarcol@gmail.com</p>
+              <p><i class="fas fa-clock"></i> Lun - Vie: 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+          <!-- FIN - Información de contacto -->
+        </div>
+
+        <!-- INICIO - Línea divisoria -->
+        <hr class="footer-divider" />
+        <!-- FIN - Línea divisoria -->
+
+        <!-- INICIO - Copyright -->
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="copyright">
+              &copy; 2025 Zona Marcol. Todos los derechos reservados. Diseñado
+              con amor para la tecnología.
+            </p>
+          </div>
+        </div>
+        <!-- FIN - Copyright -->
+      </div>
+    </footer>
+    <!-- FIN - Footer -->
+
+    <!-- ========================================
+         SCRIPTS - JAVASCRIPT
+         ======================================== -->
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="CSS/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <!-- Script personalizado para cargar productos -->
+    <script src="JS/script.js"></script>
+    <!-- Script para agregar productos -->
+    <script src="JS/AgregarProducto.js"></script>
+    <!-- Script para búsqueda de productos -->
+    <script src="JS/buscador.js"></script>
+    
+    <!-- Script de inicialización del carrusel -->
+    <script>
+      $(document).ready(function() {
+        console.log('Página cargada - Inicializando carruseles...');
+        
+        // Inicializar el carrusel principal de Bootstrap (si existe)
+        if ($('#pixelplay-carousel').length) {
+          $('#pixelplay-carousel').carousel({
+            interval: 4000,
+            pause: 'hover'
+          });
+          console.log('Carrusel principal Bootstrap inicializado');
+        }
+        
+        // El carrusel de marcas funciona automáticamente con CSS
+        if ($('.marcas-carrusel').length) {
+          console.log('Carrusel automático de marcas encontrado');
+        }
+      });
+    </script>
+
+    <!-- Contenedor para notificaciones toast -->
+    <div id="toast-container" style="position: fixed; top: 80px; right: 20px; z-index: 9999; max-width: 350px;">
+      <!-- Los toasts se insertarán aquí dinámicamente -->
+    </div>
+
+    <!-- Modal del carrito con tabla -->
+<div class="modal fade" id="modalCarrito" tabindex="-1" role="dialog" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCarritoLabel">Carrito de Productos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th>Imagen</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="contenidoCarrito">
+              <!-- Filas de productos se insertan dinámicamente aquí -->
+            </tbody>
+            <tfoot>
+              <tr id="fila-total" style="display: none;">
+                <td colspan="4" class="text-right font-weight-bold">TOTAL:</td>
+                
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================
+     MODAL PARA AGREGAR NUEVOS PRODUCTOS
+     ======================================== -->
+<div class="modal fade" id="modalAgregarProducto" tabindex="-1" role="dialog" aria-labelledby="modalAgregarProductoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      
+      <!-- CABECERA -->
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="modalAgregarProductoLabel">
+          <i class="fas fa-plus-circle"></i> Agregar Nuevo Producto
+        </h5>
+        <button type="button" class="close text-white" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <!-- CUERPO -->
+      <div class="modal-body">
+        <form id="formAgregarProducto">
+          <div class="row">
+            
+            <!-- COLUMNA IMAGEN -->
+            <div class="col-md-5">
+              <div class="form-group">
+                <label><i class="fas fa-image"></i> Imagen del Producto</label>
+                <div class="preview-imagen-container" id="previewContainer">
+                  <div class="preview-placeholder">
+                    <i class="fas fa-camera fa-3x"></i>
+                    <p>Selecciona una imagen</p>
+                  </div>
+                  <img id="previewImagen" class="preview-imagen" style="display: none;" />
+                </div>
+                <input type="file" class="form-control" id="imagenProducto" accept="image/*">
+              </div>
+            </div>
+            
+            <!-- COLUMNA INFORMACIÓN -->
+            <div class="col-md-7">
+              
+              <div class="form-group">
+                <label><i class="fas fa-barcode"></i> Código *</label>
+                <input type="text" class="form-control" id="codigoProducto" placeholder="P001" required>
+              </div>
+              
+              <div class="form-group">
+                <label><i class="fas fa-tag"></i> Nombre *</label>
+                <input type="text" class="form-control" id="nombreProducto" placeholder="Nombre del producto" required>
+              </div>
+              
+              <div class="form-group">
+                <label><i class="fas fa-dollar-sign"></i> Precio *</label>
+                <input type="number" class="form-control" id="precioProducto" placeholder="0" min="0" required>
+              </div>
+              
+              <div class="form-group">
+                <label><i class="fas fa-list"></i> Categoría *</label>
+                <select class="form-control" id="categoriaProducto" required>
+                  <option value="">Selecciona categoría</option>
+                  <option value="Computadora">Computadoras</option>
+                  <option value="Componentes">Componentes</option>
+                  <option value="Audifonos">Audífonos</option>
+                  <option value="Monitores">Monitores</option>
+                  <option value="Router">Routers</option>
+                  <option value="Accesorios">Accesorios</option>
+                  <option value="Gaming">Gaming</option>
+                </select>
+              </div>
+              
+            </div>
+          </div>
+          
+          <!-- DESCRIPCIÓN -->
+          <div class="form-group">
+            <label><i class="fas fa-align-left"></i> Descripción *</label>
+            <textarea class="form-control" id="descripcionProducto" rows="3" 
+                     placeholder="Descripción del producto..." required></textarea>
+          </div>
+          
+          <!-- OPCIONES -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="masvendidosProducto"> 
+                  <i class="fas fa-star text-warning"></i> <strong>Más vendido</strong>
+                </label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="ofertaProducto"> 
+                  <i class="fas fa-fire text-danger"></i> <strong>En oferta</strong>
+                </label>
+              </div>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+      
+      <!-- PIE -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          <i class="fas fa-times"></i> Cancelar
+        </button>
+        <button type="button" class="btn btn-success" id="btnGuardarProducto">
+          <i class="fas fa-save"></i> Guardar
+        </button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ========================================
+     MODAL DE DETALLES DEL PRODUCTO
+     ======================================== -->
+<!-- Modal para mostrar información detallada de un producto específico -->
+<div class="modal fade" id="modalDetalles" tabindex="-1" role="dialog" aria-labelledby="modalDetallesLabel" aria-hidden="true">
+  <!-- Contenedor del modal con tamaño grande -->
+  <div class="modal-dialog modal-lg" role="document">
+    <!-- Contenido principal del modal -->
+    <div class="modal-content">
+      
+      <!-- ===== CABECERA DEL MODAL ===== -->
+      <div class="modal-header">
+        <!-- Título del modal con icono dinámico -->
+        <h5 class="modal-title" id="modalDetallesLabel">Detalles del Producto</h5>
+        <!-- Botón para cerrar el modal -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <!-- ===== CUERPO DEL MODAL ===== -->
+      <div class="modal-body">
+        <!-- Layout en dos columnas: imagen y información -->
+        <div class="row">
+          
+          <!-- ===== COLUMNA IZQUIERDA: IMAGEN DEL PRODUCTO ===== -->
+          <div class="col-md-6">
+            <!-- Contenedor estilizado para la imagen -->
+            <div class="detalle-imagen-container">
+              <!-- Imagen del producto (se carga dinámicamente) -->
+              <img id="detalle-imagen" class="detalle-imagen" src="" alt="">
+            </div>
+          </div>
+          
+          <!-- ===== COLUMNA DERECHA: INFORMACIÓN DEL PRODUCTO ===== -->
+          <div class="col-md-6">
+            <div class="detalle-info">
+              
+              <!-- ===== INFORMACIÓN BÁSICA ===== -->
+              <!-- Nombre del producto -->
+              <h3 id="detalle-nombre" class="detalle-titulo"></h3>
+              <!-- Código del producto -->
+              <p id="detalle-codigo" class="detalle-codigo"></p>
+              <!-- Categoría del producto -->
+              <div id="detalle-categoria" class="detalle-categoria"></div>
+              
+              <!-- ===== PRECIO DESTACADO ===== -->
+              <!-- Contenedor especial para mostrar el precio -->
+              <div class="detalle-precio-container">
+                <span id="detalle-precio" class="detalle-precio"></span>
+              </div>
+              
+              <!-- ===== DESCRIPCIÓN DEL PRODUCTO ===== -->
+              <!-- Sección con descripción detallada -->
+              <div class="detalle-descripcion-container">
+                <h4>Descripción:</h4>
+                <p id="detalle-descripcion" class="detalle-descripcion"></p>
+              </div>
+              
+              <!-- ===== BOTONES DE ACCIÓN ===== -->
+              <!-- Contenedor para los botones del modal -->
+              <div class="detalle-botones">
+
+                <!-- Botón para cerrar el modal -->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                  <i class="fas fa-times"></i>
+                  Cerrar
+                </button>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN DEL MODAL DE DETALLES -->
+
+<!-- ========================================
+     MODALES INFORMATIVOS
+     ======================================== -->
+
+<!-- Modal Sobre Nosotros -->
+<div class="modal fade" id="modalSobreNosotros" tabindex="-1" role="dialog" aria-labelledby="modalSobreNosotrosLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalSobreNosotrosLabel">
+          <i class="fas fa-building"></i> Sobre Nosotros
+        </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Conoce más sobre Zona Marcol, tu socio tecnológico de confianza que transforma la manera en que accedes a la tecnología.</p>
+        
+        <div class="panel-group" id="accordionSobreNosotros">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionSobreNosotros" href="#collapseHistoria">
+                  <i class="fas fa-history"></i> Nuestra Historia y Trayectoria
+                </a>
+              </h4>
+            </div>
+            <div id="collapseHistoria" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><strong>Zona Marcol nació en 2015</strong> con una visión clara: democratizar el acceso a la tecnología de última generación. Lo que comenzó como una pequeña tienda local en Santa Bárbara, Honduras, se ha transformado en una de las principales distribuidoras de tecnología del país.</p>
+                
+                <p>Durante estos años hemos construido relaciones sólidas con los principales fabricantes mundiales como <strong>Apple, Samsung, HP, Dell, Logitech</strong> y muchos más, lo que nos permite ofrecer productos auténticos y de primera calidad.</p>
+                
+                <p>Nuestro crecimiento ha sido constante y sostenible, siempre manteniendo nuestro compromiso fundamental: <strong>ofrecer productos de calidad excepcional a precios justos</strong>, acompañados de un servicio al cliente que supere las expectativas.</p>
+                
+                <p>Hoy atendemos a miles de clientes satisfechos, desde estudiantes que buscan su primera laptop, hasta empresas que necesitan soluciones tecnológicas completas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionSobreNosotros" href="#collapseMision">
+                  <i class="fas fa-bullseye"></i> Nuestra Misión: Tu Éxito Tecnológico
+                </a>
+              </h4>
+            </div>
+            <div id="collapseMision" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><strong>Nuestra misión es ser tu aliado estratégico en tecnología.</strong> Nos dedicamos a facilitar el acceso a las innovaciones más avanzadas del mercado, ofreciendo productos que realmente mejoren tu vida personal y profesional.</p>
+                
+                <h5>¿Cómo lo hacemos?</h5>
+                <ul>
+                  <li><strong>Selección cuidadosa:</strong> Cada producto en nuestro catálogo pasa por un riguroso proceso de evaluación</li>
+                  <li><strong>Asesoramiento personalizado:</strong> Nuestros expertos te ayudan a encontrar exactamente lo que necesitas</li>
+                  <li><strong>Soluciones integrales:</strong> No solo vendemos productos, creamos soluciones completas</li>
+                  <li><strong>Soporte continuo:</strong> Te acompañamos desde la compra hasta el mantenimiento</li>
+                </ul>
+                
+                <p>Creemos que la tecnología debe ser <strong>accesible, comprensible y útil</strong> para todos, sin importar tu nivel de experiencia técnica.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionSobreNosotros" href="#collapseVision">
+                  <i class="fas fa-eye"></i> Nuestra Visión: Liderando el Futuro
+                </a>
+              </h4>
+            </div>
+            <div id="collapseVision" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><strong>Aspiramos a ser la empresa líder en distribución tecnológica de Centroamérica</strong>, reconocida no solo por nuestros productos, sino por nuestra excelencia en servicio y nuestro impacto positivo en la comunidad.</p>
+                
+                <h5>Nuestras metas para el futuro:</h5>
+                <ul>
+                  <li><strong>Expansión regional:</strong> Llevar nuestros servicios a más países de la región</li>
+                  <li><strong>Innovación constante:</strong> Ser los primeros en traer las últimas tecnologías</li>
+                  <li><strong>Sostenibilidad:</strong> Promover prácticas tecnológicas responsables con el medio ambiente</li>
+                  <li><strong>Educación digital:</strong> Contribuir al desarrollo tecnológico de nuestras comunidades</li>
+                </ul>
+                
+                <p>Queremos ser parte fundamental del <strong>crecimiento tecnológico del país</strong>, ayudando a empresas y personas a alcanzar su máximo potencial a través de la tecnología.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionSobreNosotros" href="#collapseValores">
+                  <i class="fas fa-heart"></i> Nuestros Valores Fundamentales
+                </a>
+              </h4>
+            </div>
+            <div id="collapseValores" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Estos valores guían cada decisión que tomamos y cada interacción que tenemos con nuestros clientes:</p>
+                
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check text-primary"></i> <strong>Integridad Total:</strong> Transparencia absoluta en precios, productos y procesos. Lo que ves es lo que obtienes, sin sorpresas.</li>
+                  
+                  <li><i class="fas fa-check text-primary"></i> <strong>Calidad Excepcional:</strong> Solo trabajamos con productos y servicios que nosotros mismos usaríamos. Tu satisfacción es nuestra prioridad.</li>
+                  
+                  <li><i class="fas fa-check text-primary"></i> <strong>Innovación Constante:</strong> Siempre estamos explorando las últimas tendencias para ofrecerte lo más avanzado del mercado.</li>
+                  
+                  <li><i class="fas fa-check text-primary"></i> <strong>Servicio Excepcional:</strong> Cada cliente es único y merece atención personalizada. Escuchamos, entendemos y actuamos.</li>
+                  
+                  <li><i class="fas fa-check text-primary"></i> <strong>Responsabilidad Social:</strong> Nos comprometemos con el desarrollo sostenible y el bienestar de nuestra comunidad.</li>
+                </ul>
+                
+                <p><strong>Estos no son solo palabras en una página web</strong> - son principios que vivimos todos los días y que puedes experimentar en cada interacción con nosotros.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Productos e Información -->
+<div class="modal fade" id="modalProductosInfo" tabindex="-1" role="dialog" aria-labelledby="modalProductosInfoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalProductosInfoLabel">
+          <i class="fas fa-boxes"></i> Productos e Información
+        </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Descubre nuestra amplia gama de productos tecnológicos organizados por categorías.</p>
+        
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4><i class="fas fa-laptop"></i> Computadoras y Laptops</h4>
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <li>• Laptops para gaming, trabajo y estudio</li>
+              <li>• Computadoras de escritorio personalizadas</li>
+              <li>• Workstations profesionales</li>
+              <li>• Mini PCs y sistemas compactos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h4><i class="fas fa-mobile-alt"></i> Dispositivos Móviles</h4>
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <li>• Smartphones de última generación</li>
+              <li>• Tablets para entretenimiento y productividad</li>
+              <li>• Smartwatches y wearables</li>
+              <li>• Accesorios y fundas protectoras</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h4><i class="fas fa-gamepad"></i> Gaming y Entretenimiento</h4>
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <li>• Consolas de videojuegos</li>
+              <li>• Tarjetas gráficas de alto rendimiento</li>
+              <li>• Periféricos gaming especializados</li>
+              <li>• Sistemas de audio premium</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <h4><i class="fas fa-network-wired"></i> Networking y Conectividad</h4>
+          </div>
+          <div class="panel-body">
+            <ul class="list-unstyled">
+              <li>• Routers y equipos de red</li>
+              <li>• Cables y adaptadores</li>
+              <li>• Sistemas de seguridad</li>
+              <li>• Soluciones empresariales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Soporte Técnico -->
+<div class="modal fade" id="modalSoporteTecnico" tabindex="-1" role="dialog" aria-labelledby="modalSoporteTecnicoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalSoporteTecnicoLabel">
+          <i class="fas fa-tools"></i> Soporte Técnico
+        </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Nuestro equipo de expertos está disponible para brindarte el mejor soporte técnico, porque tu tranquilidad y satisfacción son nuestra prioridad número uno.</p>
+        
+        <div class="panel-group" id="accordionSoporte">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionSoporte" href="#collapseAsistencia">
+                  <i class="fas fa-headset"></i> Asistencia Técnica Completa 24/7
+                </a>
+              </h4>
+            </div>
+            <div id="collapseAsistencia" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><strong>¿Tienes un problema técnico? No te preocupes.</strong> Nuestro equipo de técnicos certificados está disponible las 24 horas del día, los 7 días de la semana para resolver cualquier duda o inconveniente que puedas tener.</p>
+                
+                <h5>Canales de comunicación disponibles:</h5>
+                <ul>
+                  <li><strong>Chat en línea:</strong> Respuesta inmediata durante horario comercial (9:00 AM - 6:00 PM)</li>
+                  <li><strong>Teléfono directo:</strong> (+504) 9714-1775 - Disponible 24/7 para emergencias</li>
+                  <li><strong>Email especializado:</strong> soporte@zonamarcol.com - Respuesta en menos de 2 horas</li>
+                  <li><strong>Sistema de tickets:</strong> Seguimiento personalizado de tu caso hasta su resolución completa</li>
+                  <li><strong>Soporte remoto:</strong> Asistencia directa en tu computadora cuando sea necesario</li>
+                </ul>
+                
+                <p><strong>Tiempo promedio de respuesta:</strong> 15 minutos por chat, 2 horas por email, y resolución de problemas en menos de 24 horas en el 95% de los casos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionSoporte" href="#collapseInstalacion">
+                  <i class="fas fa-cog"></i> Instalación y Configuración Profesional
+                </a>
+              </h4>
+            </div>
+            <div id="collapseInstalacion" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><strong>¿Compraste un nuevo equipo pero no sabes cómo configurarlo?</strong> Nuestro servicio de instalación profesional se encarga de todo para que puedas empezar a disfrutar tu nueva tecnología desde el primer momento.</p>
+                
+                <h5>Servicios incluidos:</h5>
+                <ul>
+                  <li><strong>Configuración inicial completa:</strong> Sistema operativo, actualizaciones y configuraciones básicas</li>
+                  <li><strong>Instalación de software especializado:</strong> Programas de trabajo, entretenimiento y productividad</li>
+                  <li><strong>Configuración de redes:</strong> WiFi doméstico, conexiones empresariales y configuración de routers</li>
+                  <li><strong>Transferencia de datos:</strong> Migración segura desde tu equipo anterior</li>
+                  <li><strong>Configuración de respaldos:</strong> Sistemas automáticos para proteger tu información</li>
+                  <li><strong>Optimización del sistema:</strong> Configuración para máximo rendimiento</li>
+                </ul>
+                
+                <p><strong>Servicio a domicilio disponible</strong> en Santa Bárbara y zonas aledañas. Para otras ubicaciones, ofrecemos soporte remoto especializado.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionSoporte" href="#collapseMantenimiento">
+                  <i class="fas fa-wrench"></i> Mantenimiento Preventivo Inteligente
+                </a>
+              </h4>
+            </div>
+            <div id="collapseMantenimiento" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><strong>La prevención es la mejor medicina para tu tecnología.</strong> Nuestros programas de mantenimiento preventivo están diseñados para mantener tus equipos funcionando como nuevos durante más tiempo.</p>
+                
+                <h5>¿Qué incluye nuestro mantenimiento?</h5>
+                <ul>
+                  <li><strong>Limpieza física especializada:</strong> Eliminación de polvo y suciedad que afecta el rendimiento</li>
+                  <li><strong>Optimización de software:</strong> Eliminación de archivos innecesarios y programas que ralentizan el sistema</li>
+                  <li><strong>Actualizaciones críticas:</strong> Sistema operativo, drivers y software de seguridad siempre al día</li>
+                  <li><strong>Diagnósticos avanzados:</strong> Detección temprana de posibles fallas antes de que se conviertan en problemas</li>
+                  <li><strong>Verificación de respaldos:</strong> Asegurar que tu información esté siempre protegida</li>
+                  <li><strong>Reporte detallado:</strong> Informe completo del estado de tu equipo con recomendaciones</li>
+                </ul>
+                
+                <h5>Planes disponibles:</h5>
+                <ul>
+                  <li><strong>Plan Básico:</strong> Mantenimiento cada 6 meses</li>
+                  <li><strong>Plan Premium:</strong> Mantenimiento cada 3 meses + soporte prioritario</li>
+                  <li><strong>Plan Empresarial:</strong> Mantenimiento mensual + monitoreo remoto continuo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Garantías -->
+<div class="modal fade" id="modalGarantias" tabindex="-1" role="dialog" aria-labelledby="modalGarantiasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalGarantiasLabel">
+          <i class="fas fa-shield-alt"></i> Garantías
+        </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Protegemos tu inversión con garantías completas y políticas transparentes. Compra con total confianza sabiendo que respaldamos cada producto que vendemos.</p>
+        
+        <div class="panel-group" id="accordionGarantias">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionGarantias" href="#collapseTipos">
+                  <i class="fas fa-certificate"></i> Tipos de Garantía: Cobertura Total
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTipos" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h5>🛡️ Garantía del Fabricante (Incluida sin costo)</h5>
+                <p><strong>Todos nuestros productos son 100% originales</strong> e incluyen la garantía completa del fabricante. Esta cobertura es automática y no requiere pagos adicionales.</p>
+                
+                <h5>Períodos de garantía por categoría:</h5>
+                <ul>
+                  <li><strong>Laptops y Computadoras de escritorio:</strong> 1 a 3 años (según marca y modelo)</li>
+                  <li><strong>Smartphones y Tablets:</strong> 1 a 2 años de garantía completa</li>
+                  <li><strong>Periféricos y Accesorios:</strong> 6 meses a 1 año de cobertura</li>
+                  <li><strong>Gaming y Componentes:</strong> 1 a 5 años (dependiendo del componente específico)</li>
+                  <li><strong>Electrodomésticos inteligentes:</strong> 1 a 2 años con servicio técnico especializado</li>
+                </ul>
+                
+                <h5>🌟 Garantía Extendida JAD (Opcional)</h5>
+                <p><strong>¿Quieres mayor tranquilidad?</strong> Nuestra garantía extendida te ofrece protección adicional más allá de la garantía del fabricante:</p>
+                <ul>
+                  <li><strong>Extensión de garantía:</strong> Hasta 5 años adicionales de cobertura</li>
+                  <li><strong>Protección contra accidentes:</strong> Cobertura para caídas, líquidos y daños accidentales</li>
+                  <li><strong>Servicio técnico VIP:</strong> Atención prioritaria con técnicos especializados</li>
+                  <li><strong>Reemplazo express:</strong> Equipo de reemplazo inmediato mientras reparamos el tuyo</li>
+                  <li><strong>Soporte en casa:</strong> Servicio técnico a domicilio sin costo adicional</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionGarantias" href="#collapseProceso">
+                  <i class="fas fa-clipboard-check"></i> Proceso de Garantía: Simple y Rápido
+                </a>
+              </h4>
+            </div>
+            <div id="collapseProceso" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><strong>Hacer efectiva tu garantía es súper fácil.</strong> Hemos diseñado un proceso simple y transparente para que recuperes tu equipo funcionando en el menor tiempo posible.</p>
+                
+                <h5>📞 Paso 1: Contacto inicial (Inmediato)</h5>
+                <p>Llámanos al <strong>(+504) 9714-1775</strong>, escríbenos a <strong>garantias@zonamarcol.com</strong> o visita nuestra tienda. Describe el problema y nosotros nos encargamos del resto.</p>
+                
+                <h5>🔍 Paso 2: Diagnóstico profesional (24-48 horas)</h5>
+                <p>Nuestros técnicos certificados realizan una evaluación completa y gratuita del problema. Te explicamos qué pasó y cuál es la mejor solución.</p>
+                
+                <h5>✅ Paso 3: Autorización y presupuesto (Inmediato)</h5>
+                <p>Te confirmamos si el problema está cubierto por garantía y te damos un tiempo estimado de reparación. <strong>Si está en garantía, no pagas nada.</strong></p>
+                
+                <h5>🔧 Paso 4: Reparación o reemplazo (3-7 días hábiles)</h5>
+                <p>Reparamos tu equipo con partes originales o te proporcionamos un reemplazo nuevo, según corresponda y la disponibilidad de partes.</p>
+                
+                <h5>🚚 Paso 5: Entrega y pruebas (Mismo día)</h5>
+                <p>Te entregamos tu equipo completamente funcional. Incluye periodo de prueba de 7 días para asegurar tu completa satisfacción.</p>
+                
+                <p><strong>💡 Tip importante:</strong> Mientras esperamos partes o realizamos reparaciones complejas, te prestamos un equipo similar sin costo (sujeto a disponibilidad).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionGarantias" href="#collapseTerminos">
+                  <i class="fas fa-exclamation-triangle"></i> Términos Importantes: Lee Antes de Usar
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTerminos" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h5>❌ La garantía NO cubre estos casos:</h5>
+                <ul>
+                  <li><strong>Daños por mal uso:</strong> Golpes fuertes, caídas por negligencia, o uso inadecuado del equipo</li>
+                  <li><strong>Daños por líquidos:</strong> Derrame de agua, café u otros líquidos (excepto con garantía extendida)</li>
+                  <li><strong>Modificaciones no autorizadas:</strong> Cambios de hardware o software realizados por terceros</li>
+                  <li><strong>Desgaste normal:</strong> Deterioro natural por el paso del tiempo y uso regular</li>
+                  <li><strong>Software de terceros:</strong> Problemas causados por programas no originales o malware</li>
+                  <li><strong>Daños estéticos:</strong> Rayones menores que no afectan el funcionamiento</li>
+                </ul>
+                
+                <h5>📋 Documentos que DEBES conservar:</h5>
+                <ul>
+                  <li><strong>Factura original:</strong> Prueba de compra indispensable</li>
+                  <li><strong>Caja original:</strong> Con todos los accesorios que venían incluidos</li>
+                  <li><strong>Manuales y CD/USB:</strong> Documentación original del fabricante</li>
+                  <li><strong>Certificado de garantía:</strong> Si aplica para tu producto</li>
+                </ul>
+                
+                <h5>⚠️ Condiciones especiales:</h5>
+                <p><strong>Productos con garantía internacional:</strong> Algunos productos premium incluyen garantía mundial. Te ayudamos con el proceso en cualquier país.</p>
+                <p><strong>Garantía de satisfacción:</strong> Si no estás completamente satisfecho en los primeros 15 días, cambiamos tu producto por otro modelo (según políticas de devolución).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Política de Privacidad -->
+<div class="modal fade" id="modalPoliticaPrivacidad" tabindex="-1" role="dialog" aria-labelledby="modalPoliticaPrivacidadLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalPoliticaPrivacidadLabel">
+          <i class="fas fa-user-shield"></i> Política de Privacidad
+        </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Tu privacidad es nuestra prioridad. Conoce cómo protegemos y manejamos tu información personal.</p>
+        
+        <div class="panel-group" id="accordionPrivacidad">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionPrivacidad" href="#collapseRecopilacion">
+                  <i class="fas fa-database"></i> Recopilación de Información
+                </a>
+              </h4>
+            </div>
+            <div id="collapseRecopilacion" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h5>Información que recopilamos:</h5>
+                <ul>
+                  <li><strong>Datos personales:</strong> Nombre, email, teléfono, dirección</li>
+                  <li><strong>Información de pago:</strong> Procesada de forma segura y encriptada</li>
+                  <li><strong>Historial de compras:</strong> Para mejorar nuestro servicio</li>
+                  <li><strong>Datos de navegación:</strong> Para optimizar la experiencia web</li>
+                </ul>
+                
+                <h5>Cómo recopilamos la información:</h5>
+                <ul>
+                  <li>Cuando creas una cuenta</li>
+                  <li>Al realizar una compra</li>
+                  <li>Durante el uso de nuestros servicios</li>
+                  <li>A través de cookies y tecnologías similares</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionPrivacidad" href="#collapseUsoProteccion">
+                  <i class="fas fa-lock"></i> Uso y Protección de Datos
+                </a>
+              </h4>
+            </div>
+            <div id="collapseUsoProteccion" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h5>Usamos tu información para:</h5>
+                <ul>
+                  <li>Procesar y gestionar tus pedidos</li>
+                  <li>Brindar soporte técnico personalizado</li>
+                  <li>Enviar actualizaciones sobre productos y servicios</li>
+                  <li>Mejorar nuestra plataforma y servicios</li>
+                  <li>Cumplir con obligaciones legales</li>
+                </ul>
+                
+                <h5>Medidas de seguridad:</h5>
+                <ul>
+                  <li>Encriptación SSL en todas las transacciones</li>
+                  <li>Acceso restringido a datos personales</li>
+                  <li>Auditorías de seguridad regulares</li>
+                  <li>Cumplimiento con estándares internacionales</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionPrivacidad" href="#collapseDerechos">
+                  <i class="fas fa-user-cog"></i> Tus Derechos
+                </a>
+              </h4>
+            </div>
+            <div id="collapseDerechos" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Tienes derecho a:</p>
+                <ul>
+                  <li><strong>Acceso:</strong> Conocer qué información tenemos sobre ti</li>
+                  <li><strong>Rectificación:</strong> Corregir información incorrecta</li>
+                  <li><strong>Eliminación:</strong> Solicitar la eliminación de tus datos</li>
+                  <li><strong>Portabilidad:</strong> Obtener una copia de tus datos</li>
+                  <li><strong>Oposición:</strong> Oponerte al procesamiento de tus datos</li>
+                </ul>
+                <p>Para ejercer estos derechos, contacta a: privacidad@zonamarcol.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Términos y Condiciones -->
+<div class="modal fade" id="modalTerminosCondiciones" tabindex="-1" role="dialog" aria-labelledby="modalTerminosCondicionesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalTerminosCondicionesLabel">
+          <i class="fas fa-file-contract"></i> Términos y Condiciones
+        </h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Términos y condiciones que rigen el uso de nuestros servicios y la compra de productos.</p>
+        
+        <div class="panel-group" id="accordionTerminos">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionTerminos" href="#collapseCondicionesUso">
+                  <i class="fas fa-gavel"></i> Condiciones de Uso
+                </a>
+              </h4>
+            </div>
+            <div id="collapseCondicionesUso" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h5>Aceptación de términos</h5>
+                <p>Al utilizar nuestros servicios, aceptas estos términos y condiciones en su totalidad.</p>
+                
+                <h5>Uso apropiado</h5>
+                <ul>
+                  <li>Usar el sitio solo para fines legales</li>
+                  <li>No interferir con el funcionamiento del sitio</li>
+                  <li>Proporcionar información veraz y actualizada</li>
+                  <li>Mantener la confidencialidad de tu cuenta</li>
+                </ul>
+                
+                <h5>Restricciones</h5>
+                <ul>
+                  <li>Prohibido el uso no autorizado de contenido</li>
+                  <li>No realizar actividades fraudulentas</li>
+                  <li>No distribuir malware o contenido dañino</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionTerminos" href="#collapseCondicionesCompra">
+                  <i class="fas fa-shopping-cart"></i> Condiciones de Compra
+                </a>
+              </h4>
+            </div>
+            <div id="collapseCondicionesCompra" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h5>Proceso de compra</h5>
+                <ol>
+                  <li>Selección de productos</li>
+                  
+                  <li>Proporcionar información de envío y pago</li>
+                  <li>Confirmación del pedido</li>
+                  <li>Procesamiento y envío</li>
+                </ol>
+                
+                <h5>Precios y pagos</h5>
+                <ul>
+                  <li>Precios sujetos a cambios sin previo aviso</li>
+                  <li>Incluyen impuestos donde corresponda</li>
+                  <li>Métodos de pago: tarjetas, transferencias, PayPal</li>
+                  <li>Pago requerido antes del envío</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionTerminos" href="#collapseDevoluciones">
+                  <i class="fas fa-undo"></i> Devoluciones y Reembolsos
+                </a>
+              </h4>
+            </div>
+            <div id="collapseDevoluciones" class="panel-collapse collapse">
+              <div class="panel-body">
+                <h5>Política de devoluciones</h5>
+                <ul>
+                  <li><strong>Plazo:</strong> 30 días desde la fecha de compra</li>
+                  <li><strong>Condición:</strong> Producto en estado original</li>
+                  <li><strong>Embalaje:</strong> Incluir caja y accesorios originales</li>
+                  <li><strong>Documentación:</strong> Factura de compra requerida</li>
+                </ul>
+                
+                <h5>Proceso de devolución</h5>
+                <ol>
+                  <li>Contactar servicio al cliente</li>
+                  <li>Obtener autorización de devolución</li>
+                  <li>Enviar producto según instrucciones</li>
+                  <li>Inspección del producto</li>
+                  <li>Procesamiento del reembolso (5-10 días hábiles)</li>
+                </ol>
+                
+                <h5>Excepciones</h5>
+                <p>No se aceptan devoluciones de: software abierto, productos personalizados, consumibles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
