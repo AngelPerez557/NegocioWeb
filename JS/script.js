@@ -19,9 +19,8 @@ $(document).ready(function () {
     todosLosProductos = data.productos;
     // Actualizar también la variable global
     window.todosLosProductos = todosLosProductos;
-    filtrarPorVendidos("True");
-
-    $(".productos-seccion h2").text("Mas Vendidos");
+    mostrarProductos(todosLosProductos);
+    $(".productos-seccion h2").text("Nuestros Productos");
     
   }).fail(function (jqXHR, textStatus, errorThrown) {
     // Manejo de errores al cargar el JSON
@@ -183,8 +182,8 @@ $(document).ready(function () {
   /** Mostrar productos más vendidos (página de inicio) */
   $("#btn-inicio").click(function (e) {
     e.preventDefault();
-    filtrarPorVendidos("True");
-    $(".productos-seccion h2").text("Mas Vendidos");
+    mostrarProductos(todosLosProductos);
+    $(".productos-seccion h2").text("Nuestros Productos");
   });
 
   /**
